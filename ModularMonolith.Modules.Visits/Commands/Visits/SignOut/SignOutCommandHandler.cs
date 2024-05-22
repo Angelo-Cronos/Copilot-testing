@@ -14,14 +14,7 @@ public class SignOutCommandHandler : IRequestHandler<SignOutCommand, Response<bo
     }
     public async Task<Response<bool>> Handle(SignOutCommand request, CancellationToken cancellationToken)
     {
-        var visit = await _visitRepository.GetVisitByVisitorEmail(request.VisitorEmail, cancellationToken);
-        if (visit == null)
-            return Response<bool>.ErrorResponse("Visit for email not found");
-        
-        visit.Stop = DateTime.Now;
-
-        await _visitRepository.AddOrUpdateAsync(visit, cancellationToken);
-        await _visitRepository.SaveChangesAsync(cancellationToken);
+        //TODO: Implement SignOutCommandHandler
 
         return Response<bool>.SuccessResponse();
     }

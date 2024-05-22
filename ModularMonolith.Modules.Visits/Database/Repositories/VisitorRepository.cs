@@ -16,6 +16,8 @@ public class VisitorRepository : GenericRepository<Visitor, int>, IVisitorReposi
         _roContext = roContext;
     }
 
+
+    //TODO: Add documentation
     public async Task<Visitor?> GetVisitorByEmail(string email, CancellationToken cancellationToken)
     {
        var visitor = await _roContext.Set<Visitor>().FirstOrDefaultAsync(x => x.Email == email, cancellationToken);

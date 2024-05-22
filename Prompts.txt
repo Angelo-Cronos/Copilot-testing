@@ -1,0 +1,1 @@
+i need to implement the handle method of the   this method needs to check if the visitor already exits and create one if there is non. the employee and company needs to exist in the database. and the method should create a visit when all checks are valid

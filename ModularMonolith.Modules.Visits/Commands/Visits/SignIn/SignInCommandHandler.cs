@@ -18,34 +18,8 @@ public class SignInCommandHandler : IRequestHandler<SignInCommand, Response<bool
     
     public async Task<Response<bool>> Handle(SignInCommand request, CancellationToken cancellationToken)
     {
-        var visitor = await _visitorRepository.GetVisitorByEmail(request.VisitorEmail, cancellationToken);
-        if (visitor == null)
-            visitor = new Visitor
-            {
-                Email = request.VisitorEmail,
-                Name = request.VisitorName,
-                Company = request.VisitorCompany
-            };
-
-        var company = await _visitRepository.GetCompanyWithEmployeesAsync(request.CompanyId, cancellationToken);
-        if (company == null)
-            return Response<bool>.ErrorResponse("Company not found");
-    
-        var employee = company.Employees.FirstOrDefault(x => x.Id == request.EmployeeId);
-        if (employee == null)
-            return Response<bool>.ErrorResponse("Employee not found");
         
-        
-        var visit = new Visit
-        {
-            Visitor = visitor,
-            Company = company,
-            Employee = employee,
-            Start = DateTime.Now
-        };
-
-        await _visitRepository.AddOrUpdateAsync(visit, cancellationToken);
-        await _visitRepository.SaveChangesAsync(cancellationToken);
+        //TODO: Implement SignInCommandHandler
 
         return Response<bool>.SuccessResponse();
         

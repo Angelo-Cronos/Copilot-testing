@@ -58,4 +58,12 @@ public class VisitController : ControllerBase
         return Ok(result);
     }
 
+    [HttpGet("report")]
+    public async Task<IActionResult> GetReport()
+    {
+        //TODO: Implement report for visits per company per quarter
+
+        return Ok();
+    }
+
 }

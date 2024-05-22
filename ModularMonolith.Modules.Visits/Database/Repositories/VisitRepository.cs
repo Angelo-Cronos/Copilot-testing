@@ -66,4 +66,10 @@ public class VisitRepository : GenericRepository<Visit, int>, IVisitRepository
             .FirstOrDefaultAsync(x => x.Id == companyId, cancellationToken);
         return company;
     }
+
+    //TODO: Implement report for visits per company per quarter
+
+
+
+
 }
