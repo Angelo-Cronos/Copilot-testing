@@ -26,15 +26,16 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00. SolutionItems", "00. SolutionItems", "{27BCE460-730E-44F1-A772-BB012A5590C0}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
+		Api-description.md = Api-description.md
+		Empty.txt = Empty.txt
 		Prompts.txt = Prompts.txt
 		README.md = README.md
 		testing.txt = testing.txt
-		Api-description.md = Api-description.md
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ModularMonolith.OtherApi", "ModularMonolith.OtherApi\ModularMonolith.OtherApi.csproj", "{9B66ED9D-F7C7-4F07-BDF0-BC78D9A39F1E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularMonolith.Modules.Visits.Tests", "ModularMonolith.Modules.Visits.Tests\ModularMonolith.Modules.Visits.Tests.csproj", "{202D2359-3A0D-4761-A916-6453181412E0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ModularMonolith.Modules.Visits.Tests", "ModularMonolith.Modules.Visits.Tests\ModularMonolith.Modules.Visits.Tests.csproj", "{202D2359-3A0D-4761-A916-6453181412E0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

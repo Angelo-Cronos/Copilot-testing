@@ -32,6 +32,4 @@ var command = new SignInCommand
 ```
 
 ### SignOutCommand
-This command is used to sign out a visitor from a location. The command contains the following properties:
-- VisitorId: The id of the visitor that is signing out
-- 
+//TODO - Add documentation for SignOutCommand
