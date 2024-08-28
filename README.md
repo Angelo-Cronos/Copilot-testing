@@ -132,4 +132,7 @@ Nswag studio is a tool that can be used to generate code from an API. This can b
 
 https://github.com/RicoSuter/NSwag/wiki/NSwagStudio
 
+# AI Demo project
+This project is used as a baseline project to give Github Copilot training and talks.
+
 
